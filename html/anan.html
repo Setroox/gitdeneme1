@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="color" name="colorInputColor" id="colorInputColor">
+    <input type="text" name="colorInputText" id="colorInputText">
+
+    <input type="button" id="colorButton" value="Click to Change Color" onclick="changeColor()">
+    
+
+    <script>
+        function changeColor() {
+            let color = document.getElementById('colorInputColor').value;
+            document.body.style.backgroundColor = color;
+            document.getElementById('colorInputText').value = color;
+        }
+    </script>
+</body>
+</html>
